@@ -2,7 +2,7 @@ python-package-boilerplate
 ==========================
 
 [![Build Status](https://api.travis-ci.org/wkpalan/gaf-utils.png?branch=master)](https://travis-ci.org/wkpalan/gaf-utils)
-[![Requires.io](https://requires.io/github/mtchavez/python-package-boilerplate/requirements.svg?branch=master)](https://requires.io/github/mtchavez/python-package-boilerplate/requirements?branch=master)
+[![Requires.io](https://api.travis-ci.org/wkpalan/gaf-utils/requirements.svg?branch=master)](https://api.travis-ci.org/wkpalan/gaf-utils/requirements?branch=master)
 
 Boilerplate for a Python Package
 
