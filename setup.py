@@ -1,10 +1,13 @@
 import setuptools
 
+with open('README.rst') as f:
+    long_description = f.read()
+
 
 setuptools.setup(name='gaf_utils',
                  version="0.1.0",
                  description='Utilities to read and manipulate gaf files',
-                 long_description=open('README.md').read().strip(),
+                 long_description=long_description,
                  author='Kokulapalan Wimalanathan',
                  author_email='kokulapalan@gmail.com',
                  url='https://github.com/wkpalan/gaf-utils',
