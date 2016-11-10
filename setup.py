@@ -16,7 +16,7 @@ setuptools.setup(name='gaf_utils',
                  classifiers=[
                  'Development Status :: 3 - Alpha',
 
-                 'Intended Audience :: Bioinformaticians',
+                 'Intended Audience :: Developers',
 
                  'Programming Language :: Python :: 2.6',
                  'Programming Language :: Python :: 2.7'
