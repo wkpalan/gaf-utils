@@ -1,9 +1,8 @@
 import setuptools
-from packagename.version import Version
 
 
 setuptools.setup(name='gaf_utils',
-                 version=Version('0.1.0').number,
+                 version="0.1.0",
                  description='Utilities to read and manipulate gaf files',
                  long_description=open('README.md').read().strip(),
                  author='Kokulapalan Wimalanathan',

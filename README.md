@@ -12,12 +12,15 @@ Basic structure of package is
 
 ```
 ├── README.md
-├── packagename
+├── gaf
 │   ├── __init__.py
-│   ├── gaf.py
-│   └── version.py
-├── pytest.ini
+│   └── gaf.py 
+├── tests
+|   ├── __init__.py
+|   ├── test.gaf
+│   └── test_gaf.py
 ├── requirements.txt
+├── setup.cfg
 └── setup.py
 ```
 
@@ -28,8 +31,3 @@ Package requirements are handled using pip. To install them do
 ```
 pip install -r requirements.txt
 ```
-
-## Travis CI
-
-There is a ```.travis.yml``` file that is set up to run your tests for python 2.7
-and python 3.2, should you choose to use it.
