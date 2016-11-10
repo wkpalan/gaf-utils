@@ -7,7 +7,7 @@ class gaf:
         obofile = open(infile,"r")
         lines = obofile.readlines()
         if self.check_gaf_version(lines):
-            self.annotations = self.get_annotations_from_file(lines)
+            self.annotations = self.get_annotations_from_gaf(lines)
         else:
              sys.exit("The input is not a gaf file.\nPlease check the input file for errors")
 

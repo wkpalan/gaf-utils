@@ -28,12 +28,9 @@ def test_3(rater):
 '''
 
 import pytest
-from gaf.gaf import gaf
+from gaf import gaf
 
-def test_gaf:
-    gaf()
-
-
-def test_1:
-    test_gaf.read_gaf("test.gaf")
-    len(test_gaf.annoations) > 0
+def test_1():
+    test_gaf = gaf()
+    test_gaf.read_gaf("tests/test.gaf")
+    len(test_gaf.annotations) > 0
