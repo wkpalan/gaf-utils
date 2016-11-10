@@ -13,5 +13,12 @@ setuptools.setup(name='gaf_utils',
                  license='MIT',
                  zip_safe=False,
                  keywords='gaf gene ontology annotation',
-                 classifiers=['Packages', 'gaf']
+                 classifiers=[
+                 'Development Status :: 3 - Alpha',
+
+                 'Intended Audience :: Bioinformaticians',
+
+                 'Programming Language :: Python :: 2.6',
+                 'Programming Language :: Python :: 2.7'
+                 ]
                  )
