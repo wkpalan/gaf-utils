@@ -3,8 +3,7 @@ gaf-utils
 
 This is a simple python utility to read and write Gene Annotation Format Files. Will be updated to do more complicated filtering later on
 
-- Build Status |buildstatus|
-- Requirement Status |requirementstatus|
+Build Status |buildstatus| Requirement Status |requirementstatus|
 
 
 ## Package
