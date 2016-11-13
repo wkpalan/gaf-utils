@@ -1,5 +1,4 @@
 import re, sys
-import pandas as pd
 
 class gaf:
     """A simple class for reading or generating gaf files"""
