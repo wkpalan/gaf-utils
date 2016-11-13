@@ -1,4 +1,5 @@
 import re, sys
+import pandas as pd
 
 class gaf:
     """A simple class for reading or generating gaf files"""
@@ -44,6 +45,15 @@ class gaf:
             annot_values = [annot.get(k) for k in self.gaf_2_x_fields]
             gaf_out.write("%s\n" % ("\t".join(annot_values)))
         gaf_out.close()
+
+    def write_gaf_head(self,outfile):
+        gaf_out = open(outfile,"w")
+        gaf_out.write("!gaf-version:2.0\n")
+        gaf_out.write("!%s\n" % ("\t".join(self.gaf_2_x_fields)))
+        gaf_out.close()
+
+    def clear_annotations(self):
+        self.annotations = []
 
     def add_annotation(self,in_gaf_2_x):
         self.annotations.append(in_gaf_2_x)
