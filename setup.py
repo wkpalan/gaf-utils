@@ -8,12 +8,12 @@ setuptools.setup(name='gaf_utils',
                  author_email='kokulapalan@gmail.com',
                  url='https://github.com/wkpalan/gaf-utils',
                  packages=['gaf'],
-                 install_requires=[],
+                 install_requires=["pytest"],
                  license='MIT',
                  zip_safe=False,
                  keywords=['gaf','gene ontology','annotation','bioinformatics'],
                  classifiers=[
-                 'Development Status :: 3 - Alpha',
+                 'Development Status :: 1 - Alpha',
 
                 'Environment :: Console',
 
