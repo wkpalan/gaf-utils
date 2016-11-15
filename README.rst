@@ -11,9 +11,10 @@ Basic structure of package is
 ::
 
     ├── README.rst
-    ├── gaf
+    ├── utils
     │   ├── __init__.py
-    │   └── gaf.py 
+    │   ├── gaf.py
+    │   └── obo.py	
     ├── tests
     |   ├── __init__.py
     |   ├── test.gaf
