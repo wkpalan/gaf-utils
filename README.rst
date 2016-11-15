@@ -1,7 +1,8 @@
-gaf-utils
+go_utils
 =========
 
-This is a simple python utility to read and write Gene Annotation Format Files. Will be updated to do more complicated filtering later on
+This is a simple python utility to read and write Gene Ontology related Files (e.g. gaf, obo).
+Will be updated to do more complicated filtering later on
 
 Build Status |buildstatus| Requirement Status |requirementstatus|
 
@@ -14,7 +15,7 @@ Basic structure of package is
     ├── utils
     │   ├── __init__.py
     │   ├── gaf.py
-    │   └── obo.py	
+    │   └── obo.py
     ├── tests
     |   ├── __init__.py
     |   ├── test.gaf
@@ -33,8 +34,8 @@ Package requirements are handled using pip. To install them do
 pip install -r requirements.txt
 ```
 
-.. |buildstatus| image:: https://api.travis-ci.org/wkpalan/gaf-utils.png?branch=master
-.. buildstatus: https://travis-ci.org/wkpalan/gaf-utils
+.. |buildstatus| image:: https://api.travis-ci.org/wkpalan/go_-utils.png?branch=master
+.. buildstatus: https://travis-ci.org/wkpalan/go_utils
 
-.. |requirementstatus|  image:: https://requires.io/github/wkpalan/gaf-utils/requirements.svg?branch=master
-.. requirementstatus: https://requires.io/github/wkpalan/gaf-utils/requirements/?branch=master
+.. |requirementstatus|  image:: https://requires.io/github/wkpalan/go_utils/requirements.svg?branch=master
+.. requirementstatus: https://requires.io/github/wkpalan/go_utils/requirements/?branch=master
