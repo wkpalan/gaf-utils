@@ -34,8 +34,8 @@ Package requirements are handled using pip. To install them do
 pip install -r requirements.txt
 ```
 
-.. |buildstatus| image:: https://api.travis-ci.org/wkpalan/go_-utils.png?branch=master
+.. |buildstatus| image:: https://travis-ci.org/wkpalan/go_utils.svg?branch=master
 .. buildstatus: https://travis-ci.org/wkpalan/go_utils
 
-.. |requirementstatus|  image:: https://requires.io/github/wkpalan/go_utils/requirements.svg?branch=master
+.. |requirementstatus|  image::
 .. requirementstatus: https://requires.io/github/wkpalan/go_utils/requirements/?branch=master
