@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 
 .. |buildstatus| image:: https://travis-ci.org/wkpalan/go_utils.svg?branch=master
-.. buildstatus: https://travis-ci.org/wkpalan/go_utils
+  :target: https://travis-ci.org/wkpalan/go_utils
 
-.. |requirementstatus|  image :: https://requires.io/github/wkpalan/go_utils/requirements.svg?branch=master
-.. requirementstatus: https://requires.io/github/wkpalan/go_utils/requirements/?branch=master
+.. |requirementstatus| image:: https://requires.io/github/wkpalan/go_utils/requirements.svg?branch=master
+  :target: https://requires.io/github/wkpalan/go_utils/requirements/?branch=master
