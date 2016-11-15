@@ -9,6 +9,7 @@ class gaf:
         lines = obofile.readlines()
         if self.check_gaf_version(lines):
             self.annotations = self.get_annotations_from_gaf(lines)
+            self.annotations = self.annotations.reindex_axis(self.gaf_2_x_fields,1)
         else:
              sys.exit("The input is not a gaf file.\nPlease check the input file for errors")
 
@@ -38,6 +39,7 @@ class gaf:
 
 
     def write_gaf(self,outfile):
+        self.annotations = self.annotations.reindex_axis(self.gaf_2_x_fields,1)
         gaf_out = open(outfile,"w+")
         gaf_out.write("!gaf-version:2.0\n")
         gaf_out.write("!%s\n" % ("\t".join(self.gaf_2_x_fields)))
@@ -50,6 +52,7 @@ class gaf:
         # gaf_out.close()
 
     def write_gaf_head(self,outfile):
+        self.annotations = self.annotations.reindex_axis(self.gaf_2_x_fields,1)
         gaf_out = open(outfile,"w")
         gaf_out.write("!gaf-version:2.0\n")
         gaf_out.write("!%s\n" % ("\t".join(self.gaf_2_x_fields)))
@@ -60,9 +63,7 @@ class gaf:
 
     def add_annotation(self,in_gaf_2_x):
         in_gaf_2_x_df = pd.DataFrame.from_dict([in_gaf_2_x],"columns")
-        print(in_gaf_2_x_df)
         self.annotations = self.annotations.append(in_gaf_2_x_df)
-        print self.annotations
 
     # def get_sections(self,lines):
     #     """
