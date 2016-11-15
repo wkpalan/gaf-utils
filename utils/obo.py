@@ -1,5 +1,4 @@
-import itertools
-import re
+import itertools, re
 
 class obo:
     """A simple example class"""

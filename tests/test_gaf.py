@@ -28,7 +28,7 @@ def test_3(rater):
 '''
 
 import pytest
-from gaf import gaf
+from utils import gaf
 
 def test_1():
     test_gaf = gaf()
