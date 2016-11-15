@@ -1,14 +1,14 @@
 import setuptools
 
-setuptools.setup(name='go_utils',
+setuptools.setup(name='go-utils',
                  version="0.1.0",
                  description='Utilities to read and manipulate go related files',
                  long_description=open('README.rst').read(),
                  author='Kokulapalan Wimalanathan',
                  author_email='kokulapalan@gmail.com',
                  url='https://github.com/wkpalan/gaf-utils',
-                 packages=['utils'],
-                 install_requires=["pytest"],
+                 packages=['go_utils'],
+                 install_requires=["pytest","pandas"],
                  license='MIT',
                  zip_safe=False,
                  keywords=['gaf','gene ontology','annotation','bioinformatics','obo'],

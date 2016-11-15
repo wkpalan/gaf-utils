@@ -1,8 +1,9 @@
 import re, sys
+import pandas as pd
 
 class gaf:
     """A simple class for reading or generating gaf files"""
-    annotations = []
+    annotations = pd.DataFrame()
     def read_gaf(self,infile):
         obofile = open(infile,"r")
         lines = obofile.readlines()
@@ -32,7 +33,9 @@ class gaf:
                 tmp_annotations.append(col_dict)
             if index % 100 == 0:
                 print "Processed %s lines" % (index)
-        return tmp_annotations
+        gaf_df = pd.DataFrame.from_dict(tmp_annotations,"columns")
+        return gaf_df
+
 
     def write_gaf(self,outfile):
         gaf_out = open(outfile,"w+")
@@ -40,10 +43,11 @@ class gaf:
         gaf_out.write("!%s\n" % ("\t".join(self.gaf_2_x_fields)))
         #out_lines = []
         #out_lines.append()
-        for annot in self.annotations:
-            annot_values = [annot.get(k) for k in self.gaf_2_x_fields]
-            gaf_out.write("%s\n" % ("\t".join(annot_values)))
-        gaf_out.close()
+        self.annotations.to_csv(outfile,sep="\t",header=False, index=False,mode="a")
+        # for annot in self.annotations:
+        #     annot_values = [annot.get(k) for k in self.gaf_2_x_fields]
+        #     gaf_out.write("%s\n" % ("\t".join(annot_values)))
+        # gaf_out.close()
 
     def write_gaf_head(self,outfile):
         gaf_out = open(outfile,"w")
@@ -52,10 +56,13 @@ class gaf:
         gaf_out.close()
 
     def clear_annotations(self):
-        self.annotations = []
+        self.annotations = pd.DataFrame()
 
     def add_annotation(self,in_gaf_2_x):
-        self.annotations.append(in_gaf_2_x)
+        in_gaf_2_x_df = pd.DataFrame.from_dict([in_gaf_2_x],"columns")
+        print(in_gaf_2_x_df)
+        self.annotations = self.annotations.append(in_gaf_2_x_df)
+        print self.annotations
 
     # def get_sections(self,lines):
     #     """
